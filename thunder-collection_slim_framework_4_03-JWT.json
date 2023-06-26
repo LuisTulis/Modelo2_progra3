@@ -1,0 +1,436 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "slim_framework_4_03-JWT",
+    "dateExported": "2023-06-26T01:54:30.599Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d3e58ca7-b5f5-43ca-87cb-badb7b6362e3",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "01- POST (LOGIN)",
+            "url": "http://api_slim4/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-24T22:38:31.937Z",
+            "modified": "2023-06-25T22:33:09.176Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usuario_json",
+                        "value": "{\"correo\":\"prop@prop.com\",\"clave\":\"1234\"}"
+                    },
+                    {
+                        "name": "apellido",
+                        "value": "perez",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b630d21c-7309-4866-991b-db26656cae73",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "02- Verificar Token",
+            "url": "http://api_slim4/login",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-24T22:38:31.938Z",
+            "modified": "2023-06-25T22:08:21.335Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2ODc3MzA4OTIsImV4cCI6MTY4NzczMTAxMiwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiREVTS1RPUC1LNVJRN0lLXCJ9IiwiZGF0YSI6W3siY29ycmVvIjoicHJvcEBwcm9wLmNvbSIsImNsYXZlIjoiMTIzNCIsIm5vbWJyZSI6IlByb3BpZXRhcmlvIiwiYXBlbGxpZG8iOiJQcm9waWV0YXJpbyIsInBlcmZpbCI6InByb3BpZXRhcmlvIiwiZm90byI6Ii5cL2ZvdG9zXC9wcm9wQHByb3AuY29tXzEuanBnIn0seyJub21icmUiOiJGZXJtaW4iLCJBcGVsbGlkbyI6IkdvbnphbGV6In0seyJwYXJjaWFsIjoiU2VndW5kbyBQYXJjaWFsIn1dLCJhcHAiOiJBUEkgUkVTVCAyMDIyIn0.1JUMTwoMKoz7eWMexZ3-uBMTjPE-zI3AMuHG7rBEU1Y"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "token",
+                        "value": "sdfgsdfgsdfgsdfg.sdfgsdfgs.sdfgsdfgs",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "628d89b9-a0e4-4b3d-96b0-f2f2f9fe0650",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "03 - AGREGAR USUARIO (POST -> USUARIOS)",
+            "url": "http://api_slim4/usuarios",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-24T22:38:31.939Z",
+            "modified": "2023-06-26T00:42:08.279Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "usuario_json",
+                        "value": "{\"correo\":\"Fermin@Gonzalez.com\",\"clave\":\"1234\",\"nombre\":\"prop\",\"apellido\":\"ietario\",\"perfil\":\"propietario\"}"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "c:\\Users\\Luis\\Desktop\\Fy77iCcWYAI15_u.jpg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ccb622db-9f1d-42c7-bbd4-30d00e92f431",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "AGREGAR AUTO (POST /)",
+            "url": "http://api_slim4/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-06-24T22:38:31.941Z",
+            "modified": "2023-06-26T01:20:03.021Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "auto_json",
+                        "value": "{\"color\":\"azul\",\"marca\":\"hola\",\"precio\":\"51000\",\"modelo\":\"xd\"}"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "40da057c-be84-410f-b8eb-9c4e9b0fef55",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "06- POO y JWT - Verificar",
+            "url": "http://api_slim4_jwt/jwt/poo/verificar",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2023-06-24T22:38:31.942Z",
+            "modified": "2023-06-24T22:38:31.942Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "token",
+                        "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTM5MTcyMjAsImV4cCI6MTY1MzkxNzI4MCwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJvYmpfdXN1YXJpbyI6IntcIm5vbWJyZVwiOlwianVhblwiLCBcImFwZWxsaWRvXCI6XCJwZXJlelwifSJ9LCJhcHAiOiJBUEkgUkVTVCAyMDIyIn0.eR3a6noqvS_x40FPvcdDdQqh14OX0C-SpbAKvCdr0T0"
+                    },
+                    {
+                        "name": "token",
+                        "value": "",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "49bcb675-2da4-4d78-add0-b3d52056da22",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "07- POO y JWT - Obtener payload",
+            "url": "http://api_slim4_jwt/jwt/poo/obtener_payload",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-06-24T22:38:31.943Z",
+            "modified": "2023-06-24T22:38:31.943Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "token",
+                        "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTM5MTczNDIsImV4cCI6MTY1MzkxNzQwMiwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJvYmpfdXN1YXJpbyI6IntcIm5vbWJyZVwiOlwianVhblwiLCBcImFwZWxsaWRvXCI6XCJwZXJlelwifSJ9LCJhcHAiOiJBUEkgUkVTVCAyMDIyIn0.HBi5yJXqiBIbuPVNEJ1K0GUB6PQI8PL7bjyMVEFgs9Q"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "92f8a1a7-c3a3-4adb-a848-bf7aaa8e01c6",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "08- POO y JWT - Obtener datos",
+            "url": "http://api_slim4_jwt/jwt/poo/obtener_datos",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-06-24T22:38:31.944Z",
+            "modified": "2023-06-24T22:38:31.944Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "token",
+                        "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTM5MTc0NjksImV4cCI6MTY1MzkxNzUyOSwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJvYmpfdXN1YXJpbyI6IntcIm5vbWJyZVwiOlwianVhblwiLCBcImFwZWxsaWRvXCI6XCJwZXJlelwifSJ9LCJhcHAiOiJBUEkgUkVTVCAyMDIyIn0.i_gyQ71ErYZFN8Z-oqHhPWRAQkMb89ojIPXGecC3bec"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8c28e1d3-aaca-4b75-8d68-afcb630757f1",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "09- POO y JWT - Verificar (header)",
+            "url": "http://api_slim4_jwt/jwt/poo/verificar",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2023-06-24T22:38:31.945Z",
+            "modified": "2023-06-24T22:38:31.945Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTM5MTk3ODIsImV4cCI6MTY1MzkxOTg0MiwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJvYmpfdXN1YXJpbyI6IntcIm5vbWJyZVwiOlwianVhblwiLCBcImFwZWxsaWRvXCI6XCJwZXJlelwifSJ9LCJhcHAiOiJBUEkgUkVTVCAyMDIyIn0._Z5dWSGcmfxhAYwe4o69zrwPS9SQKNzrfhjJ5gMueEY"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "499ca6cd-d828-4fb8-9413-08a05061c785",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "10- Listado de autos",
+            "url": "http://api_slim4_jwt/listado/autos/",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-06-24T22:38:31.946Z",
+            "modified": "2023-06-24T22:38:31.946Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "083d161e-4556-41db-8c92-cad190acf80a",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "11- Listado de autos (jwt)",
+            "url": "http://api_slim4_jwt/listado/autos/jwt",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-06-24T22:38:31.948Z",
+            "modified": "2023-06-24T22:38:31.948Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTM5MjA4ODksImV4cCI6MTY1Mzky9MDk0OSwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJvYmpfdXN1YXJpbyI6IntcIm5vbWJyZVwiOlwianVhblwiLCBcImFwZWxsaWRvXCI6XCJwZXJlelwifSJ9LCJhcHAiOiJBUEkgUkVTVCAyMDIyIn0.OuQ_ACgt0Yn-KWjZ1CdbEadDpxZZF4ogkWLU3jJW7Mk"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "c120c944-0c19-4ceb-ad34-caf959a1d4cb",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "Ejercicio - Login JWT",
+            "url": "http://api_slim4_jwt/login/",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-06-24T22:38:31.949Z",
+            "modified": "2023-06-24T22:38:31.949Z",
+            "headers": [],
+            "body": {
+                "form": [
+                    {
+                        "name": "obj_json",
+                        "value": "{\"correo\":\"\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "obj_json",
+                        "value": "{\"clave\":\"\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "obj_json",
+                        "value": "{\"correo\":\"\", \"clave\":\"\"}",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "obj_json",
+                        "value": "{\"correo\":\"juan@perez.com\", \"clave\":123456}"
+                    }
+                ],
+                "files": [],
+                "type": "formdata"
+            }
+        },
+        {
+            "_id": "1a21c5d5-6d07-471c-bcfc-4ba0b529bfa3",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "Ejercicio - Test JWT",
+            "url": "http://api_slim4_jwt/login/test",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-06-24T22:38:31.950Z",
+            "modified": "2023-06-24T22:38:31.950Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTkwMzU4MDcsImV4cCI6MTYxOTAzNjEwNywiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlBvc3RtYW5SdW50aW1lXFxcLzcuMjYuMTBcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoianVhbiIsImFwZWxsaWRvIjoicGVyZXoiLCJjb3JyZW8iOiJqdWFuQHBlcmV6LmNvbSIsImZvdG8iOiIxXzIwMjAwNjA2MTAwMDAwX3BlcmV6LmpwZyIsImlkX3BlcmZpbCI6MSwiY2xhdmUiOm51bGx9LCJhcHAiOiJBUEkgUkVTVCAyMDIxIn0.9Ht2kYas--Cws7s-jQ6dcAz_XHIvBjvWRkJALwVkAB0"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e1e9820d-c631-4d44-9b99-e24383ab6e94",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "Ejercicio - CD - Traer Todos",
+            "url": "http://api_slim4_jwt/json_bd/",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-06-24T22:38:31.951Z",
+            "modified": "2023-06-24T22:38:31.951Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NDY0MDY4MTYsImV4cCI6MTY0NjQwNjg3NiwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJvYmpfdXN1YXJpbyI6IntcIm5vbWJyZVwiOlwianVhblwiLCBcImFwZWxsaWRvXCI6XCJwZXJlelwifSJ9LCJhcHAiOiJBUEkgUkVTVCAyMDIyIn0.WXW0fsI5B5aAFyuIs6DY1FMBwi9MyFGM5KoPhVTgEi8"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4ee6ed11-13b9-4abe-b191-d37f4f9b6676",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "Ejercicio - CD - Traer Uno",
+            "url": "http://api_slim4_jwt/json_bd/4",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2023-06-24T22:38:31.952Z",
+            "modified": "2023-06-24T22:38:31.952Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2MTkwMzYwMTMsImV4cCI6MTYxOTAzNjMxMywiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlBvc3RtYW5SdW50aW1lXFxcLzcuMjYuMTBcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJpZCI6MSwibm9tYnJlIjoianVhbiIsImFwZWxsaWRvIjoicGVyZXoiLCJjb3JyZW8iOiJqdWFuQHBlcmV6LmNvbSIsImZvdG8iOiIxXzIwMjAwNjA2MTAwMDAwX3BlcmV6LmpwZyIsImlkX3BlcmZpbCI6MSwiY2xhdmUiOm51bGx9LCJhcHAiOiJBUEkgUkVTVCAyMDIxIn0.3cGS4Q5bCKol-DA8Oi0wycmJIjEb9kLH6D_gAI6HO3M"
+                }
+            ]
+        },
+        {
+            "_id": "37aa3de9-bf10-458f-9ac7-5480456f6642",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "Ejercicio - CD - Agregar",
+            "url": "http://api_slim4_jwt/json_bd/",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2023-06-24T22:38:31.953Z",
+            "modified": "2023-06-24T22:38:31.953Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NDY0MDY3MjYsImV4cCI6MTY0NjQwNjc4NiwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJvYmpfdXN1YXJpbyI6IntcIm5vbWJyZVwiOlwianVhblwiLCBcImFwZWxsaWRvXCI6XCJwZXJlelwifSJ9LCJhcHAiOiJBUEkgUkVTVCAyMDIyIn0.RDs-UxUoHqslatRmW9DJFna9osHAiy9uwl6mRl20zTM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "titulo",
+                        "value": "titulo nuevo"
+                    },
+                    {
+                        "name": "cantante",
+                        "value": "cantante nuevo"
+                    },
+                    {
+                        "name": "anio",
+                        "value": "2022"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "07a4bece-75fb-4644-9436-3af6af290d8e",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "Ejercicio - CD - Modificar",
+            "url": "http://api_slim4_jwt/json_bd/",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2023-06-24T22:38:31.954Z",
+            "modified": "2023-06-24T22:38:31.954Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NDY0MDY4MTYsImV4cCI6MTY0NjQwNjg3NiwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJvYmpfdXN1YXJpbyI6IntcIm5vbWJyZVwiOlwianVhblwiLCBcImFwZWxsaWRvXCI6XCJwZXJlelwifSJ9LCJhcHAiOiJBUEkgUkVTVCAyMDIyIn0.WXW0fsI5B5aAFyuIs6DY1FMBwi9MyFGM5KoPhVTgEi8"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"id\": 78,\n    \"titulo\": \"titulo modificado\",\n    \"cantante\": \"cantante modificado\",\n    \"anio\": 2022\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0b2a141d-9ddc-47f7-8a87-343f2de48b3f",
+            "colId": "1b9641b8-f411-4fbd-958d-733680bcd867",
+            "containerId": "",
+            "name": "Ejercicio - CD - Eliminar",
+            "url": "http://api_slim4_jwt/json_bd/",
+            "method": "DELETE",
+            "sortNum": 180000,
+            "created": "2023-06-24T22:38:31.955Z",
+            "modified": "2023-06-24T22:38:31.955Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NDY0MDY4MTYsImV4cCI6MTY0NjQwNjg3NiwiYXVkIjoie1wiaXBfdmlzaXRhbnRlXCI6XCIxMjcuMC4wLjFcIixcInVzZXJfYWdlbnRcIjpcIlRodW5kZXIgQ2xpZW50IChodHRwczpcXFwvXFxcL3d3dy50aHVuZGVyY2xpZW50LmNvbSlcIixcImhvc3RfbmFtZVwiOlwiTEFQVE9QLUVGR1VWSDBPXCJ9IiwiZGF0YSI6eyJvYmpfdXN1YXJpbyI6IntcIm5vbWJyZVwiOlwianVhblwiLCBcImFwZWxsaWRvXCI6XCJwZXJlelwifSJ9LCJhcHAiOiJBUEkgUkVTVCAyMDIyIn0.WXW0fsI5B5aAFyuIs6DY1FMBwi9MyFGM5KoPhVTgEi8"
+                },
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"id\": \"78\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
